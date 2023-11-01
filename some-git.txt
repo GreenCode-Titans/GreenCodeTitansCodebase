@@ -1,0 +1,12 @@
+# Get started with the commands below
+git init
+git add README.md
+git commit -m "<Enter your commit message here>"
+git branch -M main
+git remote add origin https://github.com/GreenCode-Titans/GreenCodeTitansCodebase.git
+git push -u origin main
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/GreenCode-Titans/GreenCodeTitansCodebase.git
+git branch -M main
+git push -u origin main
