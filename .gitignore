@@ -1,0 +1,11 @@
+gitcommands.txt
+.venv
+./venv
+./gitcommands.txt
+__pycache__
+./__pycache__
+.env
+myNewsPaper.py
+./.vscode
+specs.txt
+.vscode
