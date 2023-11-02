@@ -162,6 +162,7 @@ def get_news():
             ]
 
         except Exception as e:
+            print("Error in news classification", e)
             raise HTTPException(
                 status_code=500,
                 detail="An error occurred" + e,
