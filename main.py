@@ -162,8 +162,10 @@ def get_news():
             ]
 
         except Exception as e:
-            all_resp_list.append(
-                {"error": "Please give the model 20 seconds to boot up!!Try Again"}
+            print("Error in news classification", e)
+            raise HTTPException(
+                status_code=500,
+                detail="An error occurred" + e,
             )
     # Write the latest news to .json file to cache directory so as to minimize on latency
     with open("cache/articles.json", "w") as json_file:
