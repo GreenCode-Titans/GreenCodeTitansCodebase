@@ -15,4 +15,19 @@ A repository to host all the frontend and backend work for the hackathon.
 
 [Repository Used to deploy the frontend to github pages](https://github.com/louis103/GreenCodeTitanEducator)
 
+<p>Our Code files are structured into specific branches depending on the usecase eg: frontend, backend,main, extras(for deplying streamlit app)</p>
+
+<p>Want to Checkout the backend branch? then do the following;</p>
+
+```
+git clone --branch backend https://github.com/GreenCode-Titans/GreenCodeTitansCodebase.git
+```
+Optionally checkout any of our branches using;
+
+```
+git clone --branch <branch-name> https://github.com/GreenCode-Titans/GreenCodeTitansCodebase.git
+or
+git clone --branch <branchname> --single-branch https://github.com/GreenCode-Titans/GreenCodeTitansCodebase.git
+```
+
 ### #Hack4Climate #Hack4Series
