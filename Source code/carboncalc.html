@@ -3,93 +3,99 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Carbon Footprint Calculator</title>
+        <title>Green Titan | Carbon Footprint Calculator</title>
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
             integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
             crossorigin="anonymous"
-            referrerpolicy="no-referrer" />
-
-        <link
-            rel="preconnect"
-            href="https://fonts.googleapis.com" />
-
-        <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossorigin />
-
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
-            rel="stylesheet" />
-
-        <link
-            rel="stylesheet"
-            href="./style.css" />
+            referrerpolicy="no-referrer"
+        >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styleNew.css">
+        <style>
+            header {
+                background: #f5f5f5;
+                padding: 10px 0;
+              }
+        
+              nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 20px;
+              }
+        
+              .logo img {
+                width: 100px; /* Adjust the width as needed */
+                height: auto;
+              }
+        
+              ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+              }
+        
+              li {
+                margin-right: 20px;
+              }
+        </style>
     </head>
     <body>
         <!-- Header tag start -->
+        <!-- How header goes here -->
         <header>
-            <img src="./logo.png" width="120px" />
-            <nav class="desktop">
-                <ul>
+            <nav>
+                <div class="logo">
+                    <img src="images/green-titan-logo.png" alt="logo">
+                </div>
+                <ul class="menu">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a class="active" href="#">Home</a>
                     </li>
                     <li>
                         <a href="projects.html">Projects</a>
                     </li>
                     <li>
-                        <a href="news.html">News</a>
+                        <a href="api_news.html">News</a>
                     </li>
                     <li>
-                        <a href="#">Carbon Footprint Calculator</a>
+                        <a href="carboncalc.html">Carbon Calculator</a>
                     </li>
                     <li>
                         <a href="getinvolved.html">Get Involved</a>
                     </li>
                 </ul>
             </nav>
-            <div class="mobile hidden">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">Projects</a>
-                        </li>
-                        <li>
-                            <a href="news.html">News</a>
-                        </li>
-                        <li>
-                            <a href="carboncalc.html">Carbon Footprint
-                                Calculator</a>
-                        </li>
-                        <li>
-                            <a href="#">Get Involved</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="inputSearch">
-                    <form id="searchFormMobile">
-                        <input type="text" placeholder="Type to search..." />
-                        <span>
-                            <i class="fa-solid fa-search"></i>
-                        </span>
-                    </form>
-                </div>
-            </div>
         </header>
         <!-- Header tag end -->
         <main>
             <iframe
                 src="https://greencodetitans-carbon-calculator.azurewebsites.net/"
                 width="100%"
-                height="600px"
-                frameborder="5">
-            </iframe>
+                height="1000px"
+                frameborder="5"
+            ></iframe>
         </main>
+        <!--
+    <footer>
+      <div class="footer-content">
+          <h3>Green Titan Educator</h3>
+          <p>enhancing the branding and recognition of your website.</p>
+          <ul class="socials">
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+      </div>
+      <div class="footer-bottom">
+          <p>copyright &copy;2023 Green Titan Educator</p>
+      </div>
+    </footer>-->
     </body>
 </html>

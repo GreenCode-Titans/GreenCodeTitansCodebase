@@ -1,100 +1,136 @@
 <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Green Titan | Home</title>
+        <link rel="stylesheet" href="styleNew.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+        <link rel="icon" type="image/png" href="images/green-titan--favicon.png">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <!-- styling for header -->
+        <style>
+      header {
+        background: #f5f5f5;
+        padding: 10px 0;
+      }
 
-<html
-  lang="en">
-
-  <head>
-
-    <meta
-      charset="UTF-8">
-
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0">
-
-    <title>GreenCode Titans</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-
-    <header>
-      <h1>Green Titan Educator</h1>
-      <nav class="nav">
-        <li class="home"><a href="#">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="carboncalc.html">Carbon Calculator</a></li>
-        <li><a href="getinvolved.html">Get Involved</a></li>
-      </nav>
-
-      <style>
-      .nav {
+      nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        list-style: none;
-        padding: 0;
+        padding: 0 20px;
       }
-    
-      .nav li {
-        margin-right: 10px;
-      }
-    
-      .nav a {
-        text-decoration: none;
-        color: black;
-      }
-    
-      .nav a:hover {
-        color: white;
-      }
-    
-      .nav .home {
-        float: left;
-      }
-    </style>
-    </header>
 
-    <main>
-      <section id="hero">
-        <img src="images/hero.jpg" alt="Climate change">
-        <h2>What is climate change?</h2>
-        <p>Climate change is a long-term shift in global or regional climate
+      .logo img {
+        width: 100px; /* Adjust the width as needed */
+        height: auto;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      li {
+        margin-right: 20px;
+      }
+        </style>
+        <!-- end of styling -->
+    </head>
+    <body>
+        <!-- <header>
+      <nav>
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+              <i class="fa-regular fa-bars"></i>
+          </label> 
+          <ul>
+              <li><img src="images/green-titan-logo.png" alt="logo"></li>
+              <li> <a class="active" href="#">Home</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="carboncalc.html">Carbon Calculator</a></li>
+              <li><a href="getinvolved.html">Get Involved</a></li>
+          </ul>
+      </nav>
+    </header> -->
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="images/green-titan-logo.png" alt="logo">
+                </div>
+                <ul class="menu">
+                    <li>
+                        <a class="active" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="api_news.html">News</a>
+                    </li>
+                    <li>
+                        <a href="carboncalc.html">Carbon Calculator</a>
+                    </li>
+                    <li>
+                        <a href="getinvolved.html">Get Involved</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="hero">
+                <img src="images/hero.jpg" alt="Climate change">
+                <h2>What is climate change?</h2>
+                <p>
+                    Climate change is a long-term shift in global or regional climate
           patterns. Climate change may cause weather patterns to be less
           predictable. A region might experience lower or higher than average
           temperatures. Climate change may cause more frequent and severe
-          weather events, such as storms, floods, and droughts.</p>
-      </section>
-
-      <section id="impacts">
-        <h2>The impacts of climate change</h2>
-        <ul>
-          <li>Rising sea levels</li>
-          <li>More extreme weather events</li>
-          <li>Changes in agricultural yields</li>
-          <li>Loss of biodiversity</li>
-          <li>Impacts on human health</li>
-        </ul>
-      </section>
-
-      <section id="solutions">
-        <h2>Solutions to climate change</h2>
-        <ul>
-          <li>Reduce greenhouse gas emissions</li>
-          <li>Invest in renewable energy</li>
-          <li>Improve energy efficiency</li>
-          <li>Protect forests</li>
-          <li>Adapt to the impacts of climate change</li>
-        </ul>
-      </section>
-    </main>
-
-    <footer>
-      <p>Copyright &copy; 2023 Green Titans Website</p>
-    </footer>
-
-    <script src="/js/script.js"></script>
-    <script src="calc.py"></script>
-
-  </body>
+          weather events, such as storms, floods, and droughts.
+                </p>
+            </section>
+            <section id="impacts">
+                <h2>The impacts of climate change</h2>
+                <ul>
+                    <li>Rising sea levels</li>
+                    <li>More extreme weather events</li>
+                    <li>Changes in agricultural yields</li>
+                    <li>Loss of biodiversity</li>
+                    <li>Impacts on human health</li>
+                </ul>
+            </section>
+            <section id="solutions">
+                <h2>Solutions to climate change</h2>
+                <ul>
+                    <li>Reduce greenhouse gas emissions</li>
+                    <li>Invest in renewable energy</li>
+                    <li>Improve energy efficiency</li>
+                    <li>Protect forests</li>
+                    <li>Adapt to the impacts of climate change</li>
+                </ul>
+            </section>
+        </main>
+        <!--
+      <footer>
+        <div class="footer-content">
+            <h3>Green Titan Educator</h3>
+            <p>enhancing the branding and recognition of your website.</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2023 Green Titan Educator</p>
+        </div>
+      </footer>-->
+        <script src="/js/script.js"></script>
+        <script src="calc.py"></script>
+    </body>
 </html>

@@ -1,0 +1,49 @@
+/* Basic styles for the news grid */
+.news-grid {
+  display: grid;
+  gap: 20px; /* Gap between articles */
+}
+
+/* Style for each news article */
+.news-article {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  background: #eaeaea;
+  text-align: left;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.news-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.news-content {
+  font-size: 16px;
+}
+
+.news-source {
+  font-size: 14px;
+  color: #555;
+}
+
+.news-url {
+  font-size: 14px;
+  color:blue;
+}
+
+/* Styles for news articles (medium screens) */
+@media screen and (max-width: 992px) {
+  .news-article {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Styles for news articles (small screens) */
+@media screen and (max-width: 768px) {
+  .news-article {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

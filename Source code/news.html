@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NewsPage</title>
-
+    <title>Green Titan | News</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="icon" type="image/png" href="images/green-titan--favicon.png">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <!--font awesome-->
     <link
       rel="stylesheet"
@@ -22,53 +24,27 @@
       rel="stylesheet" />
 
     <!---css style-->
+    <link rel="stylesheet" href="styleNew.css" />
     <link rel="stylesheet" href="styleN.css" />
   </head>
 
   <body>
     <header>
-      <img src="./logo.png" width="120px" />
-
-      <div class="inputSearch desktop">
-        <form id="searchForm">
-          <input type="text" placeholder="Type to search..." id="searchInput" />
-          <span> <i class="fa-solid fa-search"></i></span>
-        </form>
-      </div>
-      <nav class="desktop">
-        <ul>
-          <li><a href="Source code/index.html">Home</a></li>
-          <li><a href="Source code/projects.html">Projects</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="Source code/calc.html">Carbon footprint Calculator</a></li>
-          <li><a href="Source code/getinvolved.html">Get Involved</a></li>
-        </ul>
-      </nav>
-
-      <div class="menuBtn">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-
-      <!------>
-      <div class="mobile hidden">
-        <nav>
+      <nav>
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+              <i class="fa-regular fa-bars"></i>
+          </label> 
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="carboncalc.html">Carbon footprint Calculator</a></li>
-            <li><a href="getinvolved.html">Get Involved</a></li>
+              <li><img src="images/green-titan-logo.png" alt="logo"></li>
+              <li> <a href="index.html">Home</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a class="active" href="#">News</a></li>
+              <li><a href="carboncalc.html">Carbon Calculator</a></li>
+              <li><a href="getinvolved.html">Get Involved</a></li>
           </ul>
-        </nav>
-        <div class="inputSearch">
-          <form id="searchFormMobile">
-            <input type="text" placeholder="Type to search..." />
-            <span> <i class="fa-solid fa-search"></i></span>
-          </form>
-        </div>
-      </div>
+      </nav>
     </header>
-
     <!-- main  -->
 
     <main>

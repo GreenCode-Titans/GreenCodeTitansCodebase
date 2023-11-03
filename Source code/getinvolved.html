@@ -1,95 +1,138 @@
 <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Green Titan | Get Involved</title>
+        <link rel="stylesheet" href="styleNew.css">
+        <link rel="stylesheet" href="styleGI.css">
+        <style>
+      header {
+        background: #f5f5f5;
+        padding: 10px 0;
+      }
 
-<html
- 
-lang="en">
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+      }
 
-<head>
+      .logo img {
+        width: 100px; /* Adjust the width as needed */
+        height: auto;
+      }
 
-  
-<meta
- 
-charset="UTF-8">
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
 
-  
-<meta
- 
-name="viewport"
- 
-content="width=device-width, initial-scale=1.0">
+      li {
+        margin-right: 20px;
+      }
 
-  
-<title>GreenCode Titans | Get Involved</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <header>
-      <h1>Green Titan Educator</h1>
-      <nav class="nav">
-        <li class="home"><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="carboncalc.html">Carbon Calculator</a></li>
-        <li><a href="#">Get Involved</a></li>
-      </nav>
-
-      <style>
-        .nav {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          list-style: none;
-          padding: 0;
-        }
-      
-        .nav li {
-          margin-right: 10px;
-        }
-      
-        .nav a {
-          text-decoration: none;
-          color: black;
-        }
-      
-        .nav a:hover {
-          color: white;
-        }
-      
-        .nav .home {
-          float: left;
-        }
-      </style>
-  </header>
-  </header>
-
-  <main>
-    <section id="get-involved">
-      <h2>Get involved in the fight against climate change</h2>
-
-      <img src="images/get-involved-1.jpg" alt="Image 1">
-      <img src="images/get-involved-2.jpg" alt="Image 2">
-      
-      <form name="submit-to-google-sheet" method="post">
-        <input type="text" name="name" placeholder="Your name" required>
-        <input type="email" name="email" placeholder="Your email address" required>
-        <select name="interest">
-          <option value="Reduce carbon footprint">Reduce carbon footprint</option>
-          <option value="Support organizations">Support organizations</option>
-          <option value="Advocate for climate action">Advocate for climate action</option>
-          <option value="Volunteer">Volunteer</option>
-        </select>
-        <textarea name="message" placeholder="Your message"></textarea>
-        <button type="submit">Submit</button>
-      </form>
-      <p id="msg"></p>
-    </section>
-  </main>
-
-  <footer>
-    <p>Copyright &copy; 2023 GreenCode Titans Website</p>
-  </footer>
-
-  <script src="scriptGI.js"></script> 
-</body>
+      input::placeholder{
+        color: white;
+      }
+      textarea::placeholder{
+        color: white;
+      }
+        </style>
+    </head>
+    <body>
+        <!-- How header goes here -->
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="images/green-titan-logo.png" alt="logo">
+                </div>
+                <ul class="menu">
+                    <li>
+                        <a class="active" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="api_news.html">News</a>
+                    </li>
+                    <li>
+                        <a href="carboncalc.html">Carbon Calculator</a>
+                    </li>
+                    <li>
+                        <a href="getinvolved.html">Get Involved</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- ends here -->
+        <main>
+            <section id="get-involved">
+                <h2 style="text-align: center;">
+                    <strong>Get involved in the fight against climate change</strong>
+                </h2>
+            </section>
+            <div id="form">
+                <form name="submit-to-google-sheet" method="post">
+                    <div class="input_group">
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Your Name"
+                            required
+                            style="color: white;"
+                        >
+                        <!-- <label for="name">Your name</label> -->
+                    </div>
+                    <div class="input_group">
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Your Email Address"
+                            required
+                        >
+                        <!-- <label for="email">Your Email Address</label> -->
+                    </div>
+                    <div class="input_group">
+                        <label for="interest">Your Interest</label><br><br>
+                        <select id="interest">
+                            <option value="Reduce carbon footprint">Reduce carbon emissions</option>
+                            <option value="Support organizations">Support organizations/project</option>
+                            <option value="Submit project">Submit project</option>
+                            <option value="Advocate for climate action">Advocate for climate action</option>
+                            <option value="Volunteer">Volunteer</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="input_group">
+                        <textarea id="message" rows="8" placeholder="Your Message"></textarea>
+                        <!--<label for="message">Your Message</label>-->
+                    </div>
+                    <button type="submit" style="background: red; color: white;">SUBMIT</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </main>
+        <!--
+    <footer>
+      <div class="footer-content">
+          <h3>Green Titan Educator</h3>
+          <p>enhancing the branding and recognition of your website.</p>
+          <ul class="socials">
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+      </div>
+      <div class="footer-bottom">
+          <p>copyright &copy;2023 Green Titan Educator</p>
+      </div>
+    </footer>-->
+        <script src="scriptGI.js"></script>
+    </body>
 </html>
