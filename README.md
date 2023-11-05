@@ -13,7 +13,7 @@ A repository to host all the frontend and backend work for the hackathon.
 
 [Our Video Presentation](https://drive.google.com/file/d/1O6q-dWrjnWxbfwBi263q8yEs3-_Pdkvp/view?usp=sharing)
 
-[Repository Used to deploy the frontend to github pages](https://github.com/louis103/GreenCodeTitanEducator)
+[Repository Used to deploy the frontend to github pages](https://github.com/Nyaigoti/Greentitan.github.io)
 
 <p>Our Code files are structured into specific branches depending on the usecase eg: frontend, backend,main, extras(for deplying streamlit app)</p>
 
